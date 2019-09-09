@@ -9,7 +9,7 @@ import { setSearchField } from '../actions';
 
 const mapStateToProps = state => {
   return {
-    searchField: state.searchField
+    searchField: state.searchRobots.searchField
   }
 }
 
@@ -46,7 +46,7 @@ class App extends Component {
           <h1 className='f1'>RoboFriens</h1>
           <SearchBox searchChange={onSearchChange}/>
           <Scroll>
-              <CardList robots={filteredRobots}/>
+            <CardList robots={filteredRobots}/>
           </Scroll>
         </div>
       );
