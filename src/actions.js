@@ -1,4 +1,4 @@
-import { 
+import {
     CHANGE_SEARCH_FIELD,
     REQUEST_ROBOTS_PENGING,
     REQUEST_ROBOTS_SUCCESS,
@@ -6,7 +6,7 @@ import {
  } from './constants';
 
 export const setSearchField = (text) => ({
-    type: 'CHANGE_SEARCH_FIELD',
+    type: CHANGE_SEARCH_FIELD,
     payload: text
 })
 
