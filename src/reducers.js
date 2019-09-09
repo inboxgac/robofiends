@@ -25,7 +25,7 @@ const intialStateRobots = {
     error: ''
 }
 
-export const requestsRobots = (state=intialStateRobots, action={}) => {
+export const requestRobots = (state=intialStateRobots, action={}) => {
     switch(action.type) {
         case REQUEST_ROBOTS_PENGING:
             return Object.assign({}, state, { isPending: true})
